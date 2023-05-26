@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle, rgba(207,206,209,1) 0%, rgba(98,98,149,1) 78%);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 400px;
+  }
+  .searchbar,
+  .userprofile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    color: whitesmoke;
+    font-size: 20px;
+    border-bottom: 2px solid whitesmoke;
+  }
+  .userprofile {
+    justify-content: end;
+  }
+  .searchbar input {
+    width: 300px;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    outline-offset: none;
+    color: aliceblue;
+    font-size: 20px;
+  }
+  ::-webkit-input-placeholder {
+    color: hsla(0, 0%, 96%, 0.4);
+    font-size: 20px;
+  }
+  .userpic {
+    width: 50px;
+    height: 50px;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  main {
+    margin: 50px 400px;
+  }
+  .sortbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    margin-bottom: 50px;
+    /* margin: 50px 200px; */
+  }
+  .sortby {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+  }
+  #film-sort {
+    background: none;
+    font-size: 15px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+  }
+  option {
+    background: rgba(98,98,149,1);
+  }
+  ::-webkit-select-placeholder {
+    color: whitesmoke;
+    font-size: 20px;
+    background: none;
+  }
+  .visualsort {
+    display: flex;
+    gap: 10px;
+  }
+  .visualsort span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+  }
+  .films-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+  }
+  .films-column .film {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  .films-column .banner {
+    width: 250px;
+    /* aspect-ratio: auto; */
+    height: 333px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .films-column .title, .description {
+    color: whitesmoke;
+    margin: 0;
+    cursor: pointer;
+  }
+  .films-column .title {
+    font-size: 18px;
+  }
+  .films-column .description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .films-column .release {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 313px;
+    width: 250px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0 0 7px 7px;
+    background: whitesmoke;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  }
+  .films-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 20px;
+  }
+  .films-row .films-container {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: whitesmoke;
+    cursor: pointer;
+  }
+  .films-row .films-container:hover, .films-column .banner:hover, .visualsort .material-symbols-outlined:hover {
+    box-shadow: 0 0 30px rgba(245, 245, 245, 0.5);
+  }
+  .films-row .films-container:after {
+    background-image: linear-gradient(to left, #11de93, #0e7ad6);
+    z-index: 2;
+  }
+  .films-row .film {
+    display: flex;
+    position: relative;
+  }
+  .films-row .banner {
+    position: absolute;
+    left: 0px;
+    transform: translate(0%,-33%);
+    width: 65%;
+  }
+  .films-row .title, .films-row .description, .films-row .release {
+    position: absolute;
+    left: 65%;
+    margin: 20px;
+    align-items: center;
+    color: rgba(98,98,149,1);
+  }
+  .films-row .title {
+    font-size: 26px;
+  }
+  .films-row .description {
+    font-size: 20px;
+    margin-top: 130px;
+  }
+  .films-row .release {
+    font-size: 14px;
+    margin-top: 160px;
+  }
+  .material-symbols-outlined {
+    cursor: pointer;
+  }
