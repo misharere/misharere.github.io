@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .logo {
+          width: 50px;
+          height: 50px;
+          color: whitesmoke;
+        }
+        .film-title {
+          text-align: center;
+          font-weight: bold;
+          font-size: 48px;
+          color: whitesmoke;
+        }
+        .film-elem {
+          padding-bottom: 30px;
+          display: flex;
+          gap: 30px;
+        }
+        .film-image {
+          width: 500px;
+          height: 700px;
+          border-radius: 15px;
+        }
+        .film-desc {
+          margin: 0;
+          font-size: 26px;
+          color: whitesmoke;
+        }
+        .film-authors {
+          display: flex;
+          justify-content: space-around;
+          background-color: whitesmoke;
+          border-radius: 15px;
+        }
+        .film-authors p {
+          font-weight: bold;
+          font-size: 18px;
+          color: rgba(98,98,149,1);;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="searchbar">
+          <p>电影盗版网站</p>
+        </div>
+  
+        <div class="userprofile">
+          <p class="username">John Xina 约翰西娜</p>
+          <img
+            class="userpic"
+            src="https://i.etsystatic.com/14951240/r/il/6b7a35/3536263578/il_570xN.3536263578_8ry6.jpg"
+          />
+          <span class="material-symbols-outlined"> settings </span>
+        </div>
+
+       
+      </header>
+
+      <main>
+
+        <div class="film"></div>
+
+      </main>
+</body>
+<script src="./script.js"></script>
+<script>
+    const movies = new Movie(document.querySelector(".film"));
+</script>
+</html>
