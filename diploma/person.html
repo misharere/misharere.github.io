@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影盗版网站</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header class="relative-width">
+
+        <div class="searchbar">
+          <a href="./index.html">电影盗版网站</a>
+        </div>
+  
+        <div class="userprofile">
+          <p class="username">John Xina</p>
+          <img
+            class="userpic"
+            src="https://i.etsystatic.com/14951240/r/il/6b7a35/3536263578/il_570xN.3536263578_8ry6.jpg"
+          />
+          <span class="material-symbols-outlined"> settings </span>
+        </div>
+
+       
+      </header>
+
+      <main class="movie-main">
+
+        <div class="person-main">
+          <div class="lds-ring spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="cast"></div>
+
+      </main>
+</body>
+<script src="./script.js"></script>
+<script>
+
+const paramsString = document.location.search;
+const searchParams = new URLSearchParams(paramsString);
+const id = searchParams.get('id') || 1;
+const person = new Person(document.querySelector(".person-main"));
+
+</script>
+</html>
